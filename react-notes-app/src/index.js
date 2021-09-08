@@ -4,9 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const notes = [
+  {
+    content: "Learn NodeJS",
+    title:  "Learn Node",
+  },
+  {
+    content: "Learn React framework",
+    title:  "Learn React",
+  },
+  {
+    content: "Get a high-paying job",
+    title:  "Get hired",
+  },
+]
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App notes={notes} />
   </React.StrictMode>,
   document.getElementById('root')
 );
